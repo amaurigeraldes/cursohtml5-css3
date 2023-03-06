@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color:rgb(102, 102, 102) ;
+            padding: 3px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(137, 137, 137);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </style>
+
+
+    <title>Grouping Tags</title>
+</head>
+
+<body>
+    <!-- TAGs Semânticas, são vistas como Divs -->
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Título -->
+        <h1>Meu Site</h1>
+        <!-- Criando um Menú: -->
+        <nav>
+            <!-- Criando Links: -->
+            <a href="#">Link 01</a>
+            <a href="#">Link 02</a>
+            <a href="#">Link 03</a>
+            <a href="#">Link 04</a>
+            <a href="#">Link 05</a>
+        </nav>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Existe também a possibilidade de criar primeiro os Articles e dentro deles as Sections -->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <!-- Conteúdos dos Artigos: -->
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam hic ad harum
+                    laudantium eos maiores voluptatum rerum officiis debitis deleniti nam vitae in ipsam,
+                    dolore nesciunt eligendi possimus deserunt!</p>
+                <!-- Conteúdo periférico ao Artigo -->
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Curso em Vídeo</p>
+    </footer>
+
+</body>
+
+</html>

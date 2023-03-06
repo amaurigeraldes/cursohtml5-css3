@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Pesquisar no site dafont.com e verificar se a fonte escolhida tem as acentuações.
+        Baixar a Fonte desejada para a subpasta fonts.
+        Incluir no seu CSS Interno ou Externo o seletor @font-face e informar os parâmetros, podendo incluir uma ou mais url´s (indicando a pasta onde você baixou e descompactou os arquivos) selecionando CTRL + espaço e separando por virgulas e o tipo de format() conforme abaixo:
+
+        Tipos de format():
+        - opentype (.otf)
+        - truetype (.ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+
+        */
+        @font-face {
+            font-family: "Old London";
+            src: url("fonts/Olondon_.otf") format("opentype"), url("fonts/OldLondon.ttf") format("truetype"), url("fonts/Olondona.otf") format("opentype"), url("fonts/OldLondonAlternate.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Old London", Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: black;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1, h2 {
+            font-family: 'Old London', Times, serif;
+            font-size: 1.80em;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+    <title>Usando Fontes Externas Baixadas no CSS</title>
+</head>
+
+<body>
+    <h1>Usando Fontes Externas Baixadas</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ducimus ab temporibus doloremque sunt praesentium
+        pariatur quia. Quisquam quis tempore omnis odio. Officia architecto vero ab iusto omnis enim fugit. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Consequatur inventore commodi modi molestiae deserunt dolorem
+        quidem non. Perspiciatis quo quam, vero sequi iste quibusdam labore, aliquam molestiae ipsam, quae sed?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, repellat quidem odit ipsam ut a optio
+        quibusdam ipsum iste harum minus provident possimus quia dicta animi consequatur, velit id nobis.</p>
+
+
+
+    <h2>Fontes Externas Baixadas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam mollitia error consequatur fugiat
+        reiciendis doloremque facere omnis. Aspernatur mollitia voluptatum, ea facilis iure nisi tempore nihil porro
+        debitis accusantium?</p>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

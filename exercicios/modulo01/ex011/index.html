@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <picture>
+        <!-- A Ordem é importante: 1º P Telas Smartphones -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- A Ordem é importante: 2º M Telas Tablets/Ipads -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- A Ordem é importante: 3º G Telas Notebook / SmartTV -->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <hr>
+
+    <h1>Reproduzindo Áudio</h1>
+    <!-- Compatível com os Formatos MP3, WAV e OGG -->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- 1ª Maneira mais simples -->
+    <!-- <audio src="audios/Barroom Ballet - Silent Film Light - Kevin MacLeod.mp3" controls autoplay></audio> -->
+
+    <hr>
+    <!-- 2ª Maneira -->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audios/Cowboy Sting - Kevin MacLeod.mp3" type="audio/mpeg">
+        <!-- Se o navegador tiver compatibilidade, ele abrirá os arquivos na sequência definida abaixo: -->
+        <source src="pasta/arquivo.mp3" type="audio/mpeg">
+        <source src="pasta/arquivo.ogg" type="audio/ogg">
+        <source src="pasta/arquivo.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. Clique <a
+                href="audios/Cowboy Sting - Kevin MacLeod.mp3">aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            /* elemento do tipo box-level */
+
+            /* Se for necessário, podemos modificar a
+            característica do elemento "h1" de box-level
+            para inline-level, conforme abaixo:
+            display: inline;
+            */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+            /*             
+            Utilizando Shorthand para a simplificação 
+            das Linhas acima, porém precisará ser 
+            exatamente na mesma ordem:
+            width style color */
+            border: 10px solid darkslategrey;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*             
+            Utilizando Shorthand para a simplificação 
+            das Linhas acima, porém precisará ser 
+            exatamente na mesma ordem:
+            top right bottom left (sentido horário)*/
+            padding: 10px 10px 10px 10px;
+            /* Quando os 4 valores forem iguais, poderá
+            ser informado uma única vez: */
+            padding: 10px;
+            /* Porém, se você informar 2 valores, o primeiro 
+            valor será referente ao top e ao bottom e o 
+            segundo valor referente ao right e ao left: */
+            padding: 10px 20px;
+
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*             
+            Utilizando Shorthand para a simplificação 
+            das Linhas acima, porém precisará ser 
+            exatamente na mesma ordem:
+            top right bottom left (sentido horário)*/
+            margin: 20px 20px 40px 20px;
+
+            /* Para Centralização da Caixa */
+            /* Só funciona se não estiver especificando
+            as margens individualmente, ou se as margens
+            right e left forem iguais, conforme abaixo: */
+            margin: auto;
+            margin: 20px auto 40px auto;
+
+
+            /* Outline fica entre a Borda e a Margem */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*             
+            Utilizando Shorthand para a simplificação 
+            das Linhas acima, porém precisará ser 
+            exatamente na mesma ordem:
+            width style color */
+            outline: 5px dashed salmon;
+        }
+
+        a {
+            /* elemento do tipo inline-level */
+
+            /* Se for necessário, podemos modificar a
+            característica do elemento "a" de inline-level
+            para box-level, conforme abaixo:
+            display: block;
+            */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            /*             
+            Utilizando Shorthand para a simplificação 
+            das Linhas acima, porém precisará ser 
+            exatamente na mesma ordem:
+            width style color */
+            border: 10px solid red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* Quando os 4 valores forem iguais, poderá
+            ser informado uma única vez: */
+            padding: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /* Quando os 4 valores forem iguais, poderá
+            ser informado uma única vez: */
+            margin: 10px;
+
+            /* Existe ainda a possibilidade de alterarmos a
+            característica de um elemento para inline-block, 
+            as veremos isso mais adiante.
+            display: inline-block 
+            */
+
+
+        }
+    </style>
+    <title>Modelo de Caixas</title>
+</head>
+
+<body>
+    <h1>Exemplo de Caixa Box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>.
+        Vamos ver como tudo isso funciona.</p>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

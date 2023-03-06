@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+
+<body>
+    <h1>Inserindo vídeos hospedados localmente - Gera Alto Custo com Trafego de Dados</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Compatibilidades: mp4, webm e ogg -->
+
+    <!-- Maneira mais simples de fazer, porém não é a melhor maneira de fazer, pois ela replica os vídeos -->
+    <video src="videos/MeuVideo.mp4.mp4" width="560" poster="imagens/limoes-capa.png" controls autoplay loop></video>
+    <video src="videos/MeuVideo.webm.webm" width="560" poster="imagens/limoes-capa.png" controls autoplay loop></video>
+    <video src="videos/MeuVideo.ogv.ogv" width="560" poster="imagens/limoes-capa.png" controls autoplay loop></video>
+
+    <hr>
+
+    <!-- A Maneira correta de fazer, porém gera alto custo de consumo de banda (hospedagem) -->
+    <!-- Organizar a ordem por tamanho do Arquivo  -->
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="videos/MeuVideo.mp4.mp4" type="video/mp4">
+        <source src="videos/MeuVideo.webm.webm" type="video/webm">
+        <source src="videos/MeuVideo.ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <hr>
+
+    <h1>Inserindo vídeos de Serviços de Hospedagem de Vídeos - YouTube</h1>
+    <p>Na página do YouTube onde o vídeo se encontra, clicar em Compartilhar, depois em Incorporar e em Copiar a Tag iframe, que será inserida no seu site, conforme abaixo:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<hr>
+
+<h1>Inserindo vídeos de Serviços de Hospedagem de Vídeos - Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/141812811?h=5cc1c04281" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>
