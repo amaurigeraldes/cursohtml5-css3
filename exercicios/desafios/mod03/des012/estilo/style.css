@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Configurações Globais:  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    /* Espaçamento no topo do Cabeçalho */
+    padding-top: 50px;
+    /* Para colocar todas em maiúsculas */
+    /* text-transform: uppercase; */
+    /* Coloca em Maiúsculas mas as primeiras são maiores */
+    font-variant: small-caps;
+}
+
+header > p {
+    /* Espaçamento na base do Cabeçalho */
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    /* Criando os espaços para o Efeito Paralaxe */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* Espaçamento entre as Linhas */
+    line-height: 2em;
+    /* Espaçamento da Margem Esquerda */
+    padding-left: 30px;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(107, 101, 101);
+    color: white;
+}
+
+.imagem > p {
+    /* Criando uma Caixa Escura dentro das sections escuras */
+    background-color: rgba(0, 0, 0, 0.137);
+    width: 400px;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
