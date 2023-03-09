@@ -1,14 +1,33 @@
 @charset "UTF-8";
 
+/* Importação das Fontes do Google Fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+/* Definindo as Variáveis e Configurando as Fontes 
+que serão utilizadas no Projeto */
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
 /* Configurações Globais:  */
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -24,6 +43,10 @@ header > h1 {
     /* text-transform: uppercase; */
     /* Coloca em Maiúsculas mas as primeiras são maiores */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    /* Para o Tamanho das Fontes se tornar Responsivo:
+    10% da Largura da Viewport */
+    font-size: 10vw;
 }
 
 header > p {
@@ -49,6 +72,10 @@ section {
     line-height: 2em;
     /* Espaçamento da Margem Esquerda */
     padding-left: 30px;
+    font-family: var(--fonte3);
+    /* Para o Tamanho das Fontes se tornar Responsivo:
+    4.5% da Largura da Viewport */
+    font-size: 3.5vw;
 }
 
 
@@ -65,10 +92,11 @@ section.imagem {
 .imagem > p {
     /* Criando uma Caixa Escura dentro das sections escuras */
     background-color: rgba(0, 0, 0, 0.137);
-    width: 400px;
+    /* Para criarmos uma Caixa que se adapta ao tamanho 
+    do Conteúdo */
+    display: inline-block;
+    padding: 10px;
 }
-
-
 
 footer {
     background-color: black;
