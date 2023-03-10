@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        caption {
+            border: 1.5px solid rgb(0, 0, 0);
+            padding: 8px;
+            background-color:  rgb(161, 158, 158);
+            color: white;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            margin: auto;
+        }
+
+       .total, th,  thead {
+            background-color:  rgb(161, 158, 158);
+            color: white;
+        }
+
+
+        td,
+        th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td.nome_clis {
+            text-align: left;
+        }
+    </style>
+
+
+    <title>Exemplo Tabela Completa - Mesclar Células</title>
+</head>
+
+<body>
+    <h1>Mesclar Células Tabela Completa</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td class="nome_cli">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td class="nome_cli">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <td class="nome_cli">Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td class="nome_cli">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>
+                <td class="nome_cli">Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+
+            <tr>
+                <td class="nome_cli">Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+
+
+        <caption>Filmes Favoritos por Gênero</caption>
+    </table>
+
+</body>
+
+</html>
