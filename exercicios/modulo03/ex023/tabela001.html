@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            /* Separadas: separate é Default */
+            border-collapse: separate;
+            /* Juntas: collapse */
+            border-collapse: collapse;
+            /* border: 5px solid red; */
+        }
+
+        tr {
+            background-color: gray;
+        }
+
+        .linha1 {
+            background-color: greenyellow;
+        }
+
+        .dado {
+            background-color: yellow;
+        }
+
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+
+    <title>Tabelas Mod03 Cap21 Aula02</title>
+</head>
+
+<body>
+    <h1>Tabelas Mod03 Cap21 Aula02</h1>
+
+    <table>
+
+        <!-- 
+        No Html5, para as TAG´s tr e td o fechamento é
+        opcional, porém, qualquer preenchimento incorreto
+        causará efeitos indesejados na sua Tabela, portanto,
+        é melhor continuar utilizando tag´s de fechamento.
+     -->
+
+        <tr class="linha1">
+            <!-- Primeira Linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="linha2">
+            <!-- Segunda Linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr class="linha3">
+            <!-- Terceira Linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr class="linha4">
+            <!-- Quarta Linha -->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+
+        <tr>
+            <!-- Quinta Linha  -->
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+
+        <tr>
+            <!-- Sexta Linha  -->
+            <td>A6</td>
+        </tr>
+
+
+    </table>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
