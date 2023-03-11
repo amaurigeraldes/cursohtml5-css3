@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black
+        }
+    </style>
+
+
+    <title>Estudos de iframe</title>
+</head>
+
+
+
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a> para aprender a
+        programar.</p>
+
+    <hr>
+
+    <p>Acessar o site do <iframe src="https://www.google.com" frameborder="0" scrolling="auto"><a href="https://www.google.com" target="_blank">Google</a></iframe> é bem legal!</p>
+
+
+    <hr>
+
+
+
+    <!-- 
+    Tamanho Padrão: 300px x 150px
+    A largura e a altura podem ser ajustadas na CSS
+
+    scrolling="auto"  <- Default
+    scrolling="yes" <- Mostra a barra de rolagem mesmo
+    que o conteúdo estivesse cabendo na Caixa
+    scrolling="no" <- Não mostra a barra de rolagem e 
+    não permite fazer a rolagem.
+    
+    frameborder="0" <- Sem borda
+    frameborder="1" <- Com borda
+    Poderá ser excluída e personalizar na CSS:
+    border: 1px solid black
+    -->
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="auto"><a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a></iframe> para aprender a programar.</p>
+
+    <hr>
+
+    <p>O repositório do Guanabara no <iframe src="https://gustavoguanabara.github.io" frameborder="0"><a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></iframe> também é bem legal!</p>
+
+
+
+</body>
+
+</html>
