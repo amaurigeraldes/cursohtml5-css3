@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+    <title>Teste de Formulário</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <!--
+            required Obrigatório o preenchimento;
+            minlength="" Qtde Mínima de Dígitos;
+            maxlength="" Qtde Máxima de Dígitos;
+            size=" Qtde de Dígitos a serem mostrados;
+            placeholder="" Indica o que deverá ser digitado;
+            
+            Funcionarão somente se autocomplete="on"
+            autocomplete="username"
+            autocomplete="current-password"
+            autocomplete="new-password"
+             -->
+
+            <!-- Associando o Nome à Caixa de Usuário  -->
+            <label for="id_usu">Usuário: </label>
+            <input type="text" name="usu" id="id_usu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <!-- Associando o Nome à Caixa de Senha  -->
+            <label for="id_pass">Senha: </label>
+            <!-- Definindo o Tipo Password  -->
+            <input type="password" name="pass" id="id_pass" required minlength="8" maxlength="20" size="8" placeholder="mín 8 dígitos" autocomplete="current-password">
+        </p>
+
+        <p>
+            <!-- Criando o Botão de Enviar  -->
+            <input type="submit" value="Enviar">
+            <!-- Criando o Botão de Limpar  -->
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <!-- Criando formulário  -->
+    <!-- 1 - Para desligar a função autocompletar 
+    autocomplete="off" -->
+    <!-- 2 - Para enviar as informações para um numa
+    Linguagem PHP, Python, JavaScript, etc
+    action="cadastro.php" -->
+    <!-- 3 - Para associar as Caixas aos Nomes = labels
+        envelopar o Nome da Caixa e criar a Tag
+        <label for="id_nome">Nome:</label> -->
+    <!-- 4 - Método GET, até 3000 bytes, é default e
+    mostrará na barra de URL´s os Dados que foram Digitados
+    e ao utilizarmos o Método POST os dados não serão
+    mostrados, porém isso não significa que os dados 
+    estarão "protegidos". -->
+    
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="id_nome">Nome:</label> 
+            <input type="text" name="nome" id="id_nome"></p>
+        <p><label for="id_sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="id_sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
