@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Gênero:</legend>
+            <!-- No caso do type="radio" o name="" deverá 
+                ser igual para as 2 opções porém o id="" 
+                deverá ser diferente -->
+            <!-- Colocar checked para a opção desejada já 
+                aparecerá flagada -->
+            <!-- Colocar a Tag "br" para cada Opção
+                ficar em uma Linha -->
+            <input type="radio" name="x" id="id_mas">
+            <label for="id_mas">Masculino</label> <br>
+            <input type="radio" name="x" id="id_fem" checked>
+            <label for="id_fem">Feminino</label> <br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes favoritos:</legend>
+            <input type="checkbox" name="fut" id="id_fut" checked>
+            <label for="id_fut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="id_bas">
+            <label for="id_bas">Basquete</label> <br>
+            <input type="checkbox" name="nat" id="id_nat">
+            <label for="id_nat">Natação</label> <br>
+            <input type="checkbox" name="ten" id="id_ten">
+            <label for="id_ten">Tênis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
