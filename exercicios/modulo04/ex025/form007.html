@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="id_estado">Estado</label>
+            <select name="estado" id="id_estado">
+
+                <!-- Para colocar um Texto dentro da Caixa  -->
+                <option value="" selected>--- Escolha ---</option>
+                <!-- Para agrupar por Região -->
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!-- Se desejar manter um dos Estados selecionado -->
+                    <!-- <option value="SP" selected>São Paulo</option> -->
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="id_prof">Profissão: </label>
+            <input type="text" name="prof" id="id_prof" list="lista_profissoes">
+            <datalist id="lista_profissoes">
+                <!-- Aceita que sejam digitadas outras profissões na Caixa -->
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <!-- Para a utilização do textarea é necessário que o method="post"
+            pois ultrapassa os 3000 bytes -->
+            <label for="id_msg">Mensagem: </label> <br>
+            <textarea name="msg" id="id_msg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="id_cor">Cor: </label>
+            <input type="color" name="cor" id="id_cor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="id_nivel">Nível de Satísfação: </label>
+            <input type="range" name="nivel" id="id_nivel" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <!-- Para utilização do input type="file" é
+            necessário que o method="post" pois ultrapassa 
+            os 3000 bytes -->
+            <label for="id_foto">Foto do perfil: </label>
+            <input type="file" name="foto" id="id_foto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
