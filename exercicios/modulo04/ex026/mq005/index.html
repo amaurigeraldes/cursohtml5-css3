@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <title>Media Queries Mod04 Cap25 Aula09 MENU RESPONSIVO</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <!-- JavaScript: onclick="clickMenu()" -->
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, repudiandae cupiditate tenetur voluptates
+                ut facilis! Reiciendis itaque, corporis commodi repellat dolore, libero sunt provident doloremque
+                dolorem quidem temporibus recusandae dolores voluptates! Nihil tempora, quo veniam incidunt consectetur
+                accusamus itaque quia atque eaque esse placeat nam saepe debitis fugit totam velit blanditiis excepturi
+                consequuntur, laboriosam libero mollitia eveniet at exercitationem doloribus. Quas numquam, ullam, sequi
+                aperiam iusto beatae necessitatibus culpa vel odit officiis, impedit ab in placeat tempore soluta?
+                Natus, dignissimos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque impedit iure, aspernatur nam officiis
+                possimus consequatur minima quos amet est vero? Commodi nihil porro quaerat cumque, eligendi officiis
+                libero explicabo iure necessitatibus maxime. Tempore cum ab recusandae distinctio repellendus esse,
+                consequatur non accusantium itaque rem, odio reiciendis nihil reprehenderit commodi voluptatum dicta
+                doloribus ipsa. Vitae odit voluptate aliquid, iure sit nostrum. Eligendi quas magni eaque porro, itaque
+                libero? Dicta nulla cupiditate ab minus natus delectus! Non, quis unde. Porro, adipisci.</p>
+        </article>
+
+    </main>
+
+
+
+    <script>
+        // Para abrir e fechar o Menu no Mobile First
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
