@@ -20,6 +20,22 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p><label for="id_num1">Número 1: </label>
+            <input type="number" name="num1" id="id_num1" min="0" max="50" required oninput="id_soma.innerHTML = Number(id_num1.value) + Number(id_num2.value)">
+        </p>
+
+        <p><label for="id_num2">Número 2: </label>
+            <input type="number" name="num2" id="id_num2" min="0" max="50" required oninput="id_soma.innerHTML = Number(id_num1.value) + Number(id_num2.value)"">
+        </p>
+
+        <p>
+            <label for="id_soma">Soma: </label>
+            <!-- output: somente para calcular e mostrar
+                o Resultado na Tela, não é enviado -->
+            <output name="soma" id="id_soma">0</output>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
